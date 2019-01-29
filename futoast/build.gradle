@@ -1,15 +1,16 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+version = "1.0.0"
 
 android {
     compileSdkVersion 28
-
-
 
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -31,4 +32,12 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+publish {
+    userOrg = 'fudiandong'//bintray.com你的用户名
+    groupId = 'com.nordpol.futoast'//jcenter上的路径
+    artifactId = 'futoast'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'futoast'//描述，不重要
+    website = 'https://github.com/fudiandong/Futils'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
 }
