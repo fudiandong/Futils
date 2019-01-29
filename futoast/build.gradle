@@ -34,8 +34,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
 publish {
+    repoName = 'FuToast'
     userOrg = 'fudiandong'//bintray.com你的用户名
-    groupId = 'com.nordpol.futoast'//jcenter上的路径
+    groupId = 'com.nordpol.futils'//jcenter上的路径
     artifactId = 'futoast'//项目名称
     publishVersion = '1.0.0'//版本号
     desc = 'futoast'//描述，不重要
